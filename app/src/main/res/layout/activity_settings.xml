@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/text_user3"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Address :"
+        app:layout_constraintBottom_toTopOf="@+id/text_user5"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Address"
+        app:layout_constraintTop_toBottomOf="@+id/text_user4" />
+
+    <TextView
+        android:id="@+id/text_user5"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Emergency Phone :"
+        app:layout_constraintBottom_toTopOf="@+id/text_user6"
+        app:layout_constraintEnd_toStartOf="@+id/txt_EmergencyPhone"
+        app:layout_constraintTop_toBottomOf="@+id/text_user3" />
+
+    <TextView
+        android:id="@+id/text_user6"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Friend's Phone :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_FriendPhone"
+        app:layout_constraintTop_toBottomOf="@+id/text_user5"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <TextView
+        android:id="@+id/text_user4"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="User ID"
+        app:layout_constraintBottom_toTopOf="@+id/text_user3"
+        app:layout_constraintEnd_toStartOf="@+id/txt_UserId"
+        app:layout_constraintTop_toBottomOf="@+id/text_user2" />
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textLongMessage|textPersonName"
+        android:text="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJuczAxIiwic3ViIjoiMjU3OCIsInVzZXJfbmFtZSI6ImFtaW5lLmFtcmlAZ21haWwuY29tIiwic2NvcGUiOlsicmVhZC1vbmx5Il0sImV4cCI6MTYyMTk4MDQ2MCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjZhZWU1NTIyLTJhMGEtNDNmNS04NjI2LTk3YTg0NWU4ODc5NiIsImNsaWVudF9pZCI6InJlYWQtb25seSJ9.4czbq3mknAk-Go39Art2SkLTUOcNsGo-wa53Gb971LA"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_UserId"
+        app:layout_constraintStart_toEndOf="@+id/text_user2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_User" />
+
+    <EditText
+        android:id="@+id/txt_Address"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textLongMessage|textPersonName"
+        android:text="9 RUE MOREL , MONTROUGE"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_EmergencyPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_user3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_UserId" />
+
+    <EditText
+        android:id="@+id/txt_EmergencyPhone"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number|text|phone"
+        android:text="+33608135722"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_FriendPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_user5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Address" />
+
+    <EditText
+        android:id="@+id/txt_FriendPhone"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="+33608135722"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_user6"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EmergencyPhone" />
+
+    <EditText
+        android:id="@+id/txt_UserId"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="User Id"
+        android:inputType="textLongMessage|textPersonName"
+        android:text="2578"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Address"
+        app:layout_constraintStart_toEndOf="@+id/text_user4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Password" />
+
+    <TextView
+        android:id="@+id/text_broker"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Server :"
+        app:layout_constraintBottom_toTopOf="@+id/text_user"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Server"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="User :"
+        app:layout_constraintBottom_toTopOf="@+id/text_user2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_User"
+        app:layout_constraintTop_toBottomOf="@+id/text_broker" />
+
+    <TextView
+        android:id="@+id/text_user2"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/text_user4"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Password"
+        app:layout_constraintTop_toBottomOf="@+id/text_user" />
+
+    <EditText
+        android:id="@+id/txt_Server"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Server"
+        android:inputType="textPersonName"
+        android:text="wss://ns01-wss.brainium.com "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_broker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_User"
+        android:layout_width="615dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:text="oauth2-user"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_user"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Server" />
+
+</android.support.constraint.ConstraintLayout>
